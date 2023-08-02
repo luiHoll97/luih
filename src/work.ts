@@ -1,4 +1,5 @@
-import { FaCloud, FaStickyNote, FaClipboard, FaSun } from "react-icons/fa";
+import { FaClipboard, FaSun, FaBook } from "react-icons/fa";
+import {BiCricketBall, BiSolidCricketBall} from 'react-icons/bi'
 import { Project } from "./types/project";
 
 export const Projects: Project[] = [
@@ -10,27 +11,9 @@ export const Projects: Project[] = [
         techs: ["redux", "react", "firebase", 'API'],
         link: "https://gnews-api.web.app/",
         image: FaSun,
-        team: true
-    },
-    {
-        id: "2",
-        title: "Weather App",
-        description: "A simple weather app that uses the OpenWeather API to get the weather for a given location.",
-        status: true,
-        techs: ["react", "API"],
-        link: "https://weather-app-1-0-0.netlify.app/",
-        image: FaCloud,
-        team: false
-    },
-    {
-        id: "3",
-        title: "Todo App",
-        description: "A simple todo app that uses the OpenWeather API to get the weather for a given location.",
-        status: false,
-        techs: ["react", "API"],
-        link: "https://todo-app-1-0-0.netlify.app/",
-        image: FaStickyNote,
-        team: true
+        team: false,
+        docuemntation: '',
+        code: 'https://github.com/luiHoll97/redux-gnews-api'
     },
     {
         id: "4",
@@ -40,6 +23,45 @@ export const Projects: Project[] = [
         techs: ["react", "typeScript", "Sass"],
         link:'',
         image: FaClipboard,
-        team: true
+        team: false,
+        docuemntation: '',
+        code: ''
     },
+      {
+        id: '6',
+        title: "Resource Sharer",
+        description: 'A simple resource sharing app that allows users to share resources with each other.',
+        image: FaBook,
+        techs: ["react", "express", "PostgreSQL", 'node'],
+        link: "https://c5c2-study-resources.netlify.app",
+        status: true,
+        team: true,
+        docuemntation: '',
+        code: ''
+      },
+      {
+        id: '7',
+        title: "Cricket Scoreboard",
+        description: 'A simple cricket scoreboard app',
+        image: BiCricketBall,
+        techs: ["react", 'chakra-ui', "Firebase"],
+        link: "https://cricket-scoreboard-1-0-0.netlify.app",
+        status: false,
+        team: false,
+        docuemntation: '',
+        code: 'https://github.com/luiHoll97/cricket-scorer'
+      },
+      {
+        id: '8',
+        title: "redux scorer",
+        description: 'A simple cricket scoreboard app using redux. I used this to see how I could use redux to manage state for my other app.',
+        image: BiSolidCricketBall,
+        techs: ["react", 'redux'],
+        link: "https://redux-scorer.netlify.app",
+        status: true,
+        team: false,
+        docuemntation: 'https://excellent-wolverine-1d1.notion.site/Cricket-Scorer-294263f5ae6c4970b0a3c19d75e4bda8?pvs=4',
+        code: ''
+      }
+
 ]

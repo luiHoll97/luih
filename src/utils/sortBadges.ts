@@ -14,6 +14,13 @@ export const sortBadges = (tech: string): string => {
             return 'green'
         case 'Sass':
             return 'pink'
+        case 'express':
+            return 'yellow'
+        case 'PostgreSQL':
+            return 'red'
+        case 'node':
+            return 'green'
+            
         default:
             return 'gray'
     }

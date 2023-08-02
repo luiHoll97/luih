@@ -49,7 +49,7 @@ const SingleProject = ({ project }: Props): JSX.Element => {
                     </Stack>
                 </CardBody>
                 <Flex justifyContent='center' mb={3} overflow={'hidden'}>
-                    <Stack direction='row' wrap={'wrap'}>
+                    <Stack direction='row' wrap={'wrap'} m={1.5}>
                         {project.techs.map((tech) => (
                             <Badge colorScheme={sortBadges(tech)}>{tech} </Badge>
                         ))}
@@ -59,9 +59,19 @@ const SingleProject = ({ project }: Props): JSX.Element => {
                 <Center>
                     <CardFooter>
                         <HStack spacing='5' justifyContent={'center'}>
-                            <Icon as={FaCode} boxSize={7} />
-                            <Icon as={FaDochub} boxSize={7} />
-                            <Icon as={FaChrome} boxSize={7} />
+                            {project.code &&
+                                <Icon as={FaCode} boxSize={7} href={''} />
+                            }
+                            {project.docuemntation &&
+                                <a href={project.docuemntation} target="_blank" rel="noreferrer">
+                                    <Icon as={FaDochub} boxSize={7} />
+                                </a>
+                            }
+                            {project.link &&
+                                <a href={project.link} target="_blank" rel="noreferrer">
+                                    <Icon as={FaChrome} boxSize={7} cursor={'pointer'} />
+                                </a>
+                            }
                         </HStack>
                     </CardFooter>
                 </Center>
