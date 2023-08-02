@@ -8,4 +8,5 @@ export interface Project {
     techs: string[];
     link: string;
     image: IconType;
+    team: boolean
 }

@@ -1,13 +1,13 @@
 import Lui from '../LuiH.png'
-import { Text, Box, Center, Grid, GridItem, useColorMode, Image, Heading, HStack, VStack, useBreakpointValue, Icon } from '@chakra-ui/react';
+import { Text, Box, Center, Grid, GridItem, Image, HStack, VStack, useBreakpointValue, Icon } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 export const HomeProfile = (): JSX.Element => {
-    const { colorMode, toggleColorMode } = useColorMode();
     const isSmallScreen = useBreakpointValue({ base: true, md: false });
 
     return (
         <>
-            <Grid templateColumns={{ base: "1fr", md: "repeat(8, 1fr)" }} templateRows={'repeat(4, 1fr)'} gap={5}>
+        <Box bg={'beige'} minH={'100vh'} >
+            <Grid templateColumns={{ base: "1fr", md: "repeat(8, 1fr)" }} templateRows={{base : 'repeat(2,1fr)', md: 'repeat(4, 1fr)'}} gap={5}>
                 {!isSmallScreen && (
                     <GridItem colSpan={{ base: 1, md: 1 }} rowSpan={{ base: 1, md: 1 }}>
 
@@ -55,6 +55,7 @@ export const HomeProfile = (): JSX.Element => {
                     </GridItem>
                 )}
             </Grid>
+        </Box>
         </>
     );
 }

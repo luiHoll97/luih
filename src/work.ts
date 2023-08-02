@@ -9,16 +9,18 @@ export const Projects: Project[] = [
         status: false,
         techs: ["redux", "react", "firebase", 'API'],
         link: "https://gnews-api.web.app/",
-        image: FaSun
+        image: FaSun,
+        team: true
     },
     {
         id: "2",
         title: "Weather App",
         description: "A simple weather app that uses the OpenWeather API to get the weather for a given location.",
-        status: false,
+        status: true,
         techs: ["react", "API"],
         link: "https://weather-app-1-0-0.netlify.app/",
-        image: FaCloud
+        image: FaCloud,
+        team: false
     },
     {
         id: "3",
@@ -27,7 +29,8 @@ export const Projects: Project[] = [
         status: false,
         techs: ["react", "API"],
         link: "https://todo-app-1-0-0.netlify.app/",
-        image: FaStickyNote
+        image: FaStickyNote,
+        team: true
     },
     {
         id: "4",
@@ -36,6 +39,7 @@ export const Projects: Project[] = [
         status: true,
         techs: ["react", "typeScript", "Sass"],
         link:'',
-        image: FaClipboard
+        image: FaClipboard,
+        team: true
     },
 ]

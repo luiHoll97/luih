@@ -1,11 +1,15 @@
+import { Box } from "@chakra-ui/react";
 import { HomeProfile } from "../components/HomeProfile";
 import Nav from "../components/Nav";
+import NavTest from "../components/NavTest";
 
 const Home = () : JSX.Element => {
     return (
         <>
-            <Nav />
+        <Box bg={'beige'} minH={'100vh'} display={'flex'} flexDirection={'column'}>
+            <NavTest />
             <HomeProfile />
+        </Box>
         </>
     );
 }

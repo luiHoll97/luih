@@ -1,17 +1,44 @@
 import { Project } from "../types/project";
 import { Text, CardBody, Stack, Heading, Divider, CardFooter, Card, Icon, Badge, Center, HStack, Flex } from "@chakra-ui/react";
-import { FaCode, FaDochub, FaChrome } from "react-icons/fa";
+import { FaCode, FaDochub, FaChrome, FaUserFriends } from "react-icons/fa";
 import { sortBadges } from "../utils/sortBadges";
 
 interface Props {
     project: Project;
 }
 
-
 const SingleProject = ({ project }: Props): JSX.Element => {
     return (
         <>
-            <Card maxW='sm'>
+            <Card maxW='sm' opacity={project.status ? "1" : "0.7"}>
+                {project.status === false && (
+                    <Center
+                        position="absolute"
+                        top="0"
+                        left="0"
+                        width="100%"
+                        height="100%"
+                        bg="gray.300"
+                        opacity="0.8"
+                        zIndex="1"
+                        color="black"
+                        fontWeight="bold"
+                    >
+                        In Progress
+                    </Center>
+                )}
+                {project.team && (
+                    <Center
+                        position="absolute"
+                        top="0"
+                        right="0"
+                        zIndex="1"
+                        color="white"
+                        mr={2}
+                    >
+                        <Icon as={FaUserFriends} boxSize={6} color={'green'} />
+                    </Center>
+                )}
                 <CardBody>
                     <Icon as={project.image} boxSize='50px' w={'100%'} />
                     <Stack mt='6' spacing='3'>
