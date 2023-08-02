@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    Box, Flex, Button, useColorModeValue, Stack, useColorMode, Heading, Text,
+    Box, Flex, Button, useColorModeValue, Stack, Heading, Text,
     Menu, MenuButton, MenuList, MenuItem
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';

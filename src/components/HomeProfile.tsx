@@ -34,10 +34,10 @@ export const HomeProfile = (): JSX.Element => {
                                 </Text>
                                 <Box mt={10}>
                                     <HStack spacing={10}>
-                                        <a href='https://github.com/luiHoll97' target='_blank' rel='norefferer'>
+                                        <a href='https://github.com/luiHoll97' target='_blank' rel='noreferrer'>
                                         <Icon as={FaGithub} boxSize={10} />
                                         </a>
-                                        <a href="https://www.linkedin.com/in/lucien-holliday" target='_blank' rel='norefferer'>
+                                        <a href="https://www.linkedin.com/in/lucien-holliday" target='_blank' rel='noreferrer'>
                                         <Icon as={FaLinkedin} boxSize={10} />
                                         </a>
                                         <a href="mailto:tech.luiholl@gmail.com">

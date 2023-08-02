@@ -1,11 +1,11 @@
-import NavTest from "../components/Nav";
+import Nav from "../components/Nav";
 import ProjectDisplay from "../components/ProjectDisplay";
 import PortfolioDesc from "../components/PortfolioDesc";
 
 const Portfolio = () : JSX.Element => {
     return (
         <>
-            <NavTest />
+            <Nav />
             <PortfolioDesc />
             <ProjectDisplay />
         </>
