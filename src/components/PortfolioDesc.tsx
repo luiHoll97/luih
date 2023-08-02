@@ -1,4 +1,4 @@
-import { Flex, Text, Heading, Divider, Box, Icon } from "@chakra-ui/react"
+import { Flex, Text, Heading, Icon } from "@chakra-ui/react"
 import {FaUserFriends} from 'react-icons/fa'
 
 const PortfolioDesc = (): JSX.Element => {

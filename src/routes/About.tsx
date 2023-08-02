@@ -1,4 +1,4 @@
-import Nav from "../components/NavTest";
+import Nav from "../components/Nav";
 import AboutContent from "../components/AboutContent";
 
 const About = () : JSX.Element => {

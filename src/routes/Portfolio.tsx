@@ -1,4 +1,4 @@
-import NavTest from "../components/NavTest";
+import NavTest from "../components/Nav";
 import ProjectDisplay from "../components/ProjectDisplay";
 import PortfolioDesc from "../components/PortfolioDesc";
 
