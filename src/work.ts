@@ -19,10 +19,10 @@ export const Projects: Project[] = [
     {
         id: "4",
         title: "Portfolio",
-        description: "A simple portfolio website to showcase my projects.",
+        description: "A simple portfolio website to showcase my projects. The page is now inactive as I have moved to a new portfolio site.",
         status: true,
         techs: ["react", "javascript", "CSS"],
-        link:'',
+        link:'https://lui-holliday.netlify.app',
         image: FaClipboard,
         team: false,
         docuemntation: '',
