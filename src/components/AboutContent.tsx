@@ -16,7 +16,7 @@ const AboutContent = (): JSX.Element => {
                 <Flex justifyContent={'center'} mt={10} >
                     <Text fontSize="xl" fontFamily={'mono'} maxW={'75%'}>
                         Thankfully, I got accepted into Academy.io's highly selective, fully funded graduate scheme. It was a fantastic opportunity to explore cutting-edge technologies, with a strong focus on PERN stack, good coding practises and collaboration.
-                        I still have some good connections at Academy, and can't reccomend them highly enough for anyone looking to get into the tech industry.
+                        I still have some good connections at Academy, and can't recommend them highly enough for anyone looking to get into the tech industry.
                     </Text>
                 </Flex>
                 <Flex justifyContent={'center'} mt={10} >

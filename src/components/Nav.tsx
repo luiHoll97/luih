@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
     Box, Flex, Button, useColorModeValue, Stack, Heading, Text,
     Menu, MenuButton, MenuList, MenuItem
@@ -22,7 +22,7 @@ export default function Nav(): JSX.Element {
         }
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
