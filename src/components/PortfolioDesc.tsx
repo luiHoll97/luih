@@ -1,5 +1,5 @@
 import { Flex, Text, Heading, Icon } from "@chakra-ui/react"
-import {FaUserFriends} from 'react-icons/fa'
+import {FaUserFriends, FaHammer} from 'react-icons/fa'
 
 const PortfolioDesc = (): JSX.Element => {
     return (
@@ -19,6 +19,7 @@ const PortfolioDesc = (): JSX.Element => {
             <Flex justifyContent={'center'} mt={5}>
             <Text justifyContent={'center'} fontFamily={'mono'} maxW={'75%'} mb='20' mt={2}>
                     Some of these projects were done with friends, so you'll see a {<Icon as={FaUserFriends} color={'green'}/>} next to the ones I worked on with others.
+                    Equally, some are still being worked on! If so you'll see a {<Icon as={FaHammer} color={'yellow.500'}/>} next to them.
                 </Text>
             </Flex>
         </>

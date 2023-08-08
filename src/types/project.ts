@@ -5,6 +5,7 @@ export interface Project {
     title: string;
     description: string;
     status: boolean;
+    linksAvailable: boolean;
     techs: string[];
     link: string;
     image: IconType;

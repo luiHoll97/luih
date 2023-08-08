@@ -9,23 +9,25 @@ export const Projects: Project[] = [
         description: "A simple API to get news from Google News. Functionality to save favourites when signed in via Google.",
         status: false,
         techs: ["redux", "react", "firebase", 'API'],
-        link: "https://gnews-api.web.app/",
+        link: '',
         image: FaSun,
         team: false,
         docuemntation: '',
-        code: 'https://github.com/luiHoll97/redux-gnews-api'
+        code: 'https://github.com/luiHoll97/redux-gnews-api',
+        linksAvailable: true,
     },
     {
         id: "4",
         title: "Portfolio",
         description: "A simple portfolio website to showcase my projects.",
         status: true,
-        techs: ["react", "typeScript", "Sass"],
+        techs: ["react", "javascript", "CSS"],
         link:'',
         image: FaClipboard,
         team: false,
         docuemntation: '',
-        code: ''
+        code: 'https://github.com/luiHoll97/lui-portfolio',
+        linksAvailable: true,
     },
       {
         id: '6',
@@ -37,19 +39,21 @@ export const Projects: Project[] = [
         status: true,
         team: true,
         docuemntation: '',
-        code: ''
+        code: '',
+        linksAvailable: true,
       },
       {
         id: '7',
         title: "Cricket Scoreboard",
-        description: 'A simple cricket scoreboard app',
+        description: 'A Cricket Scoring app. Create and save matches, teams and players specific to the users gmail ID',
         image: BiCricketBall,
         techs: ["react", 'chakra-ui', "Firebase"],
-        link: "https://cricket-scoreboard-1-0-0.netlify.app",
+        link: "",
         status: false,
         team: false,
         docuemntation: '',
-        code: 'https://github.com/luiHoll97/cricket-scorer'
+        code: 'https://github.com/luiHoll97/cricket-scorer',
+        linksAvailable: true,
       },
       {
         id: '8',
@@ -60,8 +64,9 @@ export const Projects: Project[] = [
         link: "https://redux-scorer.netlify.app",
         status: true,
         team: false,
-        docuemntation: 'https://excellent-wolverine-1d1.notion.site/Cricket-Scorer-294263f5ae6c4970b0a3c19d75e4bda8?pvs=4',
-        code: ''
+        docuemntation: '',
+        code: 'https://github.com/luiHoll97/redux-scorer',
+        linksAvailable: true,
       }
 
 ]

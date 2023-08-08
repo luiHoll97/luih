@@ -1,17 +1,20 @@
 import { Project } from "../types/project";
 import { Text, CardBody, Stack, Heading, Divider, CardFooter, Card, Icon, Badge, Center, HStack, Flex } from "@chakra-ui/react";
-import { FaCode, FaDochub, FaChrome, FaUserFriends } from "react-icons/fa";
+import { FaCode, FaDochub, FaChrome, FaUserFriends, FaHammer } from "react-icons/fa";
 import { sortBadges } from "../utils/sortBadges";
 
 interface Props {
     project: Project;
 }
 
+const isProjectsIcons = (project: Project): boolean => (project.linksAvailable && project.status === false) || project.team
+const isNewProject = (project: Project): boolean => project.status === false && project.linksAvailable === false
+
 const SingleProject = ({ project }: Props): JSX.Element => {
     return (
         <>
-            <Card maxW='sm' opacity={project.status ? "1" : "0.7"}>
-                {project.status === false && (
+            <Card maxW='sm' opacity={project.status ? "1" : "0.8"}>
+                {isNewProject(project) && (
                     <Center
                         position="absolute"
                         top="0"
@@ -24,20 +27,18 @@ const SingleProject = ({ project }: Props): JSX.Element => {
                         color="black"
                         fontWeight="bold"
                     >
-                        In Progress
+                        New Project
                     </Center>
                 )}
-                {project.team && (
-                    <Center
-                        position="absolute"
-                        top="0"
-                        right="0"
-                        zIndex="1"
-                        color="white"
-                        mr={2}
-                    >
-                        <Icon as={FaUserFriends} boxSize={6} color={'green'} />
-                    </Center>
+
+                {isProjectsIcons(project) && (
+                    <Stack direction='row' spacing={2} position="absolute" top="0" left="0" zIndex="1" ml={2} mt={2}>
+
+                        {project.team && <Icon as={FaUserFriends} boxSize={6} color={'green'} />}
+                        {!project.status && <Icon as={FaHammer} boxSize={6} color={'yellow.500'} />}
+
+
+                    </Stack>
                 )}
                 <CardBody>
                     <Icon as={project.image} boxSize='50px' w={'100%'} />
@@ -60,7 +61,9 @@ const SingleProject = ({ project }: Props): JSX.Element => {
                     <CardFooter>
                         <HStack spacing='5' justifyContent={'center'}>
                             {project.code &&
-                                <Icon as={FaCode} boxSize={7} href={''} />
+                                <a href={project.code} target="_blank" rel="noreferrer">
+                                    <Icon as={FaCode} boxSize={7} href={''} />
+                                </a>
                             }
                             {project.docuemntation &&
                                 <a href={project.docuemntation} target="_blank" rel="noreferrer">
