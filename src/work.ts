@@ -1,4 +1,4 @@
-import { FaClipboard, FaSun, FaBook } from "react-icons/fa";
+import { FaClipboard, FaSun, FaBook, FaTicketAlt } from "react-icons/fa";
 import {BiCricketBall, BiSolidCricketBall} from 'react-icons/bi'
 import { Project } from "./types/project";
 
@@ -66,6 +66,19 @@ export const Projects: Project[] = [
         team: false,
         docuemntation: '',
         code: 'https://github.com/luiHoll97/redux-scorer',
+        linksAvailable: true,
+      },
+      {
+        id: '9',
+        title: "immer todo",
+        description: 'A simple todo app using immer. I am also going through the immer docs and making notes (see my docs).',
+        image: FaTicketAlt,
+        techs: ["react", 'immer'],
+        link: '',
+        status: false,
+        team: false,
+        docuemntation: 'https://lui-holliday-docs.notion.site/immer-docs-31d4d8fad9534960b4f19ad62ffc824b?pvs=4',
+        code: '',
         linksAvailable: true,
       }
 
