@@ -74,11 +74,11 @@ export const Projects: Project[] = [
         description: 'A simple todo app using immer. I am also going through the immer docs and making notes (see my docs).',
         image: FaTicketAlt,
         techs: ["React", 'Immer'],
-        link: '',
+        link: 'https://immer-todo.netlify.app',
         status: false,
         team: false,
         docuemntation: 'https://lui-holliday-docs.notion.site/immer-docs-31d4d8fad9534960b4f19ad62ffc824b?pvs=4',
-        code: '',
+        code: 'https://github.com/luiHoll97/immer-todo',
         linksAvailable: true,
       },
       {
