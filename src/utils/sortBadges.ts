@@ -28,6 +28,10 @@ export const sortBadges = (tech: string): string => {
       return "yellow";
     case "CSS":
       return "pink";
+    case "PHP":
+      return "purple";
+    case "Laravel":
+      return "red";
 
     default:
       return "gray";
