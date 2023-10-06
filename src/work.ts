@@ -30,7 +30,7 @@ export const Projects: Project[] = [
     id: "9",
     title: "immer todo",
     description:
-      "A simple todo app using immer. I am also going through the immer docs and making notes (see my docs).",
+      "A todo app using immer. I am also going through the immer docs and making notes (see my docs).",
     image: FaTicketAlt,
     techs: ["React", "Immer", "Chakra-ui"],
     link: "https://immer-todo.netlify.app",
