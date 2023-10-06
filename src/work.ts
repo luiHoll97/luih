@@ -14,7 +14,7 @@ export const Projects: Project[] = [
     id: "12",
     title: "php-api",
     description:
-      "An intro to PHP/Laravel. The project is a simple server to get & post data to a CSV file, info on how to run is on the code link",
+      "An intro to PHP/Laravel API endpoints with custom PHP CLI commands. Info on how to run is in the docs.",
     status: true,
     techs: ["PHP", "API", "Laravel"],
     link: "",
@@ -59,7 +59,7 @@ export const Projects: Project[] = [
     id: "8",
     title: "redux scorer",
     description:
-      "A simple cricket scoreboard app using redux. I used this to see how I could use redux to manage state for my other app.",
+      "A very basic cricket scoreboard app using redux. I used this to see how I could use redux to manage state for a similar, larger app.",
     image: BiSolidCricketBall,
     techs: ["React", "Redux"],
     link: "https://redux-scorer.netlify.app",
@@ -88,7 +88,7 @@ export const Projects: Project[] = [
     id: "4",
     title: "Portfolio",
     description:
-      "A simple portfolio website to showcase my projects. The page is now inactive as I have moved to a new portfolio site.",
+      "An old portfolio website to showcase my projects. The page is now inactive as I have moved to a new portfolio site.",
     status: true,
     techs: ["React", "Javascript", "CSS"],
     link: "https://lui-holliday.netlify.app",
@@ -102,9 +102,9 @@ export const Projects: Project[] = [
     id: "6",
     title: "Resource Sharer",
     description:
-      "A simple resource sharing app that allows users to share resources with each other.",
+      "A resource sharing app that allows users to share resources with each other. The app needs to be updated.",
     image: FaBook,
-    techs: ["React", "Express", "PostgreSQL", "Node"],
+    techs: ["React", "Express", "PostgreSQL", "Node", 'CSS'],
     link: "https://c5c2-study-resources.netlify.app",
     status: true,
     team: true,
@@ -130,7 +130,7 @@ export const Projects: Project[] = [
     id: "1",
     title: "Gnews API",
     description:
-      "A simple API to get news from Google News. Functionality to save favourites when signed in via Google.",
+      "An API to get news from Google News. Functionality to save favourites when signed in via Google. Currently, firebase permissions need to be updated.",
     status: false,
     techs: ["Redux", "React", "Firebase", "API"],
     link: "",
