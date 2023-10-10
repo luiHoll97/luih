@@ -5,11 +5,25 @@ import {
   FaTicketAlt,
   FaCheckDouble,
   FaSignal,
+  FaHamburger
 } from "react-icons/fa";
 import { BiCricketBall, BiSolidCricketBall } from "react-icons/bi";
 import { Project } from "./types/project";
 
 export const Projects: Project[] = [
+  {
+    id: "13",
+    title: "Taste.",
+    description: "Full-stack React Native app using Expo and Postgres for food delivery. It's a new project but the wireframe and DB structure is complete.",
+    status: false,
+    techs: ["React Native", "Expo", "Postgres", "Node", "Express", "React Native Paper"],
+    link: "",
+    image: FaHamburger,
+    team: false,
+    docuemntation: "https://lui-holliday-docs.notion.site/Front-End-1976a3e9ef1b4c89865f0ee40d8a70e2?pvs=4",
+    code: "",
+    linksAvailable: true,
+  },
   {
     id: "12",
     title: "php-api",
