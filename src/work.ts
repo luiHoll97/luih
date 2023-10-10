@@ -16,7 +16,7 @@ export const Projects: Project[] = [
     title: "Taste.",
     description: "Full-stack React Native app using Expo and Postgres for food delivery. It's a new project but the wireframe and DB structure is complete.",
     status: false,
-    techs: ["React Native", "Expo", "Postgres", "Node", "Express", "React Native Paper"],
+    techs: ["React Native", "Expo", "PostgreSQL", "Node", "Express", "React Native Paper"],
     link: "",
     image: FaHamburger,
     team: false,

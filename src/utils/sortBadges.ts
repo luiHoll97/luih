@@ -32,6 +32,13 @@ export const sortBadges = (tech: string): string => {
       return "purple";
     case "Laravel":
       return "red";
+      case "React Native":
+      return "blue";
+      case "Expo":
+      return "green";
+      case "React Native Paper":
+      return "pink";
+      
 
     default:
       return "gray";
