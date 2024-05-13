@@ -1,14 +1,11 @@
 import {
-  FaClipboard,
-  FaSun,
-  FaBook,
   FaTicketAlt,
   FaCheckDouble,
   FaSignal,
   FaHamburger
 } from "react-icons/fa";
 import { FaVialVirus } from "react-icons/fa6";
-import { BiCricketBall, BiSolidCricketBall } from "react-icons/bi";
+import { BiSolidCricketBall } from "react-icons/bi";
 import { Project } from "./types/project";
 
 export const Projects: Project[] = [
