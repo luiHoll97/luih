@@ -1,5 +1,5 @@
 import { Flex, Text, Heading, Icon } from "@chakra-ui/react"
-import {FaUserFriends, FaHammer} from 'react-icons/fa'
+import {FaHammer} from 'react-icons/fa'
 
 const PortfolioDesc = (): JSX.Element => {
     return (
