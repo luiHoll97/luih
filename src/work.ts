@@ -7,6 +7,7 @@ import {
   FaSignal,
   FaHamburger
 } from "react-icons/fa";
+import { FaVialVirus } from "react-icons/fa6";
 import { BiCricketBall, BiSolidCricketBall } from "react-icons/bi";
 import { Project } from "./types/project";
 
@@ -22,6 +23,21 @@ export const Projects: Project[] = [
     team: false,
     docuemntation: "https://lui-holliday-docs.notion.site/Front-End-1976a3e9ef1b4c89865f0ee40d8a70e2?pvs=4",
     code: "",
+    linksAvailable: true,
+  },
+  {
+    id: "14",
+    title: "fandanGO-aria",
+    description:
+      "Python package used by research facilities as part of the European Project 'Fragment Screen' to depsoit metadata to Instruct Eric's ARIA. ",
+    status: true,
+    techs: ["Python", "pip", "API"],
+    link: "",
+    image: FaVialVirus,
+    team: false,
+    docuemntation: "https://github.com/FragmentScreen/fandanGO-aria/wiki",
+    code: "https://github.com/FragmentScreen/fandanGO-aria",
+    pip: "https://pypi.org/project/fandanGO-aria/",
     linksAvailable: true,
   },
   {
@@ -96,62 +112,6 @@ export const Projects: Project[] = [
     docuemntation:
       "https://lui-holliday-docs.notion.site/mobx-todo-bc62262b194b4ec0b80cda36d26bb05c?pvs=4",
     code: "https://github.com/luiHoll97/mobx-todo",
-    linksAvailable: true,
-  },
-  {
-    id: "4",
-    title: "Portfolio",
-    description:
-      "An old portfolio website to showcase my projects. The page is now inactive as I have moved to a new portfolio site.",
-    status: true,
-    techs: ["React", "Javascript", "CSS"],
-    link: "https://lui-holliday.netlify.app",
-    image: FaClipboard,
-    team: false,
-    docuemntation: "",
-    code: "https://github.com/luiHoll97/lui-portfolio",
-    linksAvailable: true,
-  },
-  {
-    id: "6",
-    title: "Resource Sharer",
-    description:
-      "A resource sharing app that allows users to share resources with each other. The app needs to be updated.",
-    image: FaBook,
-    techs: ["React", "Express", "PostgreSQL", "Node", 'CSS'],
-    link: "https://c5c2-study-resources.netlify.app",
-    status: true,
-    team: true,
-    docuemntation: "",
-    code: "https://github.com/maemastersdev/C5C2-Study-Resources-Backend/tree/main",
-    linksAvailable: true,
-  },
-  {
-    id: "7",
-    title: "Cricket Scoreboard",
-    description:
-      "A Cricket Scoring app. Create and save matches, teams and players specific to the users gmail ID",
-    image: BiCricketBall,
-    techs: ["React", "Chakra-ui", "Firebase"],
-    link: "",
-    status: false,
-    team: false,
-    docuemntation: "",
-    code: "https://github.com/luiHoll97/cricket-scorer",
-    linksAvailable: true,
-  },
-  {
-    id: "1",
-    title: "Gnews API",
-    description:
-      "An API to get news from Google News. Functionality to save favourites when signed in via Google. Currently, firebase permissions need to be updated.",
-    status: false,
-    techs: ["Redux", "React", "Firebase", "API"],
-    link: "",
-    image: FaSun,
-    team: false,
-    docuemntation: "",
-    code: "https://github.com/luiHoll97/redux-gnews-api",
     linksAvailable: true,
   },
 ];
