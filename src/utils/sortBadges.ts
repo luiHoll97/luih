@@ -11,7 +11,7 @@ export const sortBadges = (tech: string): string => {
     case "TypeScript":
       return "cyan";
     case "API":
-      return "green";
+      return "orange";
     case "Sass":
       return "pink";
     case "Express":
@@ -38,6 +38,10 @@ export const sortBadges = (tech: string): string => {
       return "green";
       case "React Native Paper":
       return "pink";
+      case "Python":
+      return "green";
+      case "pip":
+      return "purple";
       
 
     default:

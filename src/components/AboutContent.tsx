@@ -9,27 +9,24 @@ const AboutContent = (): JSX.Element => {
                 </Flex>
                 <Flex justifyContent={'center'} mt={10} >
                     <Text fontSize="xl" fontFamily={'mono'} maxW={'75%'}>
-                        Hey, I'm Lui Holliday, a software engineer currently living in London, UK. Despite my profession, I wasn't always tech inclined and I originally studied Biomedical Sciences in Sheffield. During my time there, I got a chance to do a bioinformatics internship at SITraN, and that's when I first got into coding.
-                        After finishing my degree, I moved to London and worked as a project manager in the construction industry, looking for a way to break into the tech industry. There was also some dead time due to Covid, which gave me a good oppurtunity to practise some basic Javascript principles.
+                        Hello there. I'm Lui, a Software Engineer based in London, UK. I have experience in both financial services and biotechnology as a developer, as well as some freelance work in the real estate industry.
                     </Text>
                 </Flex>
                 <Flex justifyContent={'center'} mt={10} >
                     <Text fontSize="xl" fontFamily={'mono'} maxW={'75%'}>
-                        Thankfully, I got accepted into Academy.io's highly selective, fully funded graduate scheme. It was a fantastic opportunity to explore cutting-edge technologies, with a strong focus on PERN stack, good coding practises and collaboration.
-                        I still have some good connections at Academy, and can't recommend them highly enough for anyone looking to get into the tech industry.
+                        I started my career in Biomedical Science, graduating from Sheffield Hallam University, where I developed an intrigue for programming during a bioinformatics palcement at the SITraN research facility.
+                        Pursuing this interest, I was accepted onto Academy.io's fully-funded software engineering bootcamp, where I learned the fundamentals of web development and software engineering.
                     </Text>
                 </Flex>
                 <Flex justifyContent={'center'} mt={10} >
                     <Text fontSize="xl" fontFamily={'mono'} maxW={'75%'}>
-                        After completing the programme, I joined Sarasin & Partners LLP, hoping to make strides in the tech/finance world. However, I didn't get what I wanted from the role, mainly using plain javascript and SQL to support a third-party server.
-                        As good an experience as it was, I realised the job wasn't aligning with my learning goals, so I decided to move on after five months.
-                        Right now, I'm in a phase of upskilling and seeking new opportunities to grow. My passion for coding and technology is stronger than ever, and I'm looking forward to joining a company that shares this.
+                        Since then, aside from employment, I have spent a considerable amount of time exploring new technologies and frameworks, to both explore unique solutions to problems and to discover where my interests lie.
                     </Text>
                 </Flex>
                 <Flex justifyContent={'center'} mt={10} >
                     <Text fontSize="xl" fontFamily={'mono'} maxW={'75%'}>
-                        Aside from my professional journey, I had some fun experiences as a kid – playing cricket for Nottinghamshire and representing England in chess.
-                        I also love to travel and actually moved to Rome during my time at Academy. I'm trying my best to continue learning Italian, but it's not easy.
+                        In my current role, I work with a team of developers to advance and maintain the project management software of a Pan-European Research Infrastructure.
+                        As part of this, I am the author of a Python package that is used (or atleast will be when we go live) by research facilities across Europe to deposit metadata from various structural biology techniques to a centralised database.
                     </Text>
                 </Flex>
 

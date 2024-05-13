@@ -12,4 +12,5 @@ export interface Project {
     team: boolean;
     docuemntation: string;
     code: string;
+    pip?:string
 }

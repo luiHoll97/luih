@@ -29,8 +29,8 @@ export const HomeProfile = (): JSX.Element => {
                                     Hey There
                                 </Text>
                                 <Text fontSize={'xl'} fontWeight='light' fontFamily={'mono'} maxW={'90%'} mt={2}>
-                                    I'm Lui, a software engineer based in London, UK. I'm currently taking a Summer break from employment to work on some personal projects and to learn some new skills, not to mention travel a bit!
-                                    Check out my socials below to see what I'm up to.
+                                    I'm Lui, a software engineer based in London, UK. I'm a software engineer currently working in the biotechnology sector.
+                                    Feel free to reach out to me on any of the platforms below.
                                 </Text>
                                 <Box mt={10}>
                                     <HStack spacing={10}>
