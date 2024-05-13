@@ -19,6 +19,7 @@ import {
   FaChrome,
   FaUserFriends,
   FaHammer,
+  FaPython
 } from "react-icons/fa";
 import { sortBadges } from "../utils/sortBadges";
 
@@ -90,7 +91,7 @@ const SingleProject = ({ project }: Props): JSX.Element => {
           <CardFooter>
             <HStack spacing="5" justifyContent={"center"}>
               {project.code && (
-                <a href={project.code} target="_blank" rel="noreferrer">
+                <a href={project.code} target="_blank" rel="noreferrer" title="code link">
                   <Icon as={FaCode} boxSize={7} href={""} />
                 </a>
               )}
@@ -99,13 +100,19 @@ const SingleProject = ({ project }: Props): JSX.Element => {
                   href={project.docuemntation}
                   target="_blank"
                   rel="noreferrer"
+                  title="documentation"
                 >
                   <Icon as={FaDochub} boxSize={7} />
                 </a>
               )}
               {project.link && (
                 <a href={project.link} target="_blank" rel="noreferrer">
-                  <Icon as={FaChrome} boxSize={7} cursor={"pointer"} />
+                  <Icon as={FaChrome} boxSize={7} cursor={"pointer"} title="live site" />
+                </a>
+              )}
+              {project.pip && (
+                <a href={project.pip} target="_blank" rel="noreferrer" title="pypi index">
+                  <Icon as={FaPython} boxSize={7} cursor={"pointer"} />
                 </a>
               )}
             </HStack>
