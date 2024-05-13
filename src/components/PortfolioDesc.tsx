@@ -11,15 +11,12 @@ const PortfolioDesc = (): JSX.Element => {
             </Flex>
             <Flex justifyContent={'center'} mt={5}>
                 <Text fontFamily={'mono'} maxW={'75%'}>
-                    Here are some of the projects I've worked on recently. I'm taking this time out to learn some new skills and technologies, so I'll be adding more projects as I go.
-                    My previous role was a lot of plain JavaScript, so taking this time to further my TypeScript and React knoweledge has been great for improving my front-end skills.
-                    I've focussed less on my back-end skills, hence a lot of firebase projects, but I'm looking to improve my back-end skills in the near future.
+                    Take a look at some of the projects I'm working on.
                 </Text>
             </Flex>
             <Flex justifyContent={'center'} mt={5}>
             <Text justifyContent={'center'} fontFamily={'mono'} maxW={'75%'} mb='20' mt={2}>
-                    Some of these projects were done with friends, so you'll see a {<Icon as={FaUserFriends} color={'green'}/>} next to the ones I worked on with others.
-                    Equally, some are still being worked on! If so you'll see a {<Icon as={FaHammer} color={'yellow.500'}/>} next to them.
+                    Some of these are still being worked on! If so you'll see a {<Icon as={FaHammer} color={'yellow.500'}/>} next to them.
                 </Text>
             </Flex>
         </>
