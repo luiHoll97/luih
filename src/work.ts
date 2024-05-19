@@ -7,6 +7,7 @@ import {
 import { FaVialVirus } from "react-icons/fa6";
 import { BiSolidCricketBall } from "react-icons/bi";
 import { Project } from "./types/project";
+import { FaLanguage } from "react-icons/fa";
 
 export const Projects: Project[] = [
   {
@@ -35,6 +36,21 @@ export const Projects: Project[] = [
     docuemntation: "https://github.com/FragmentScreen/fandanGO-aria/wiki",
     code: "https://github.com/FragmentScreen/fandanGO-aria",
     pip: "https://pypi.org/project/fandanGO-aria/",
+    linksAvailable: true,
+  },
+  {
+    id: "15",
+    title: "Aprendo",
+    description:
+      "Command line tool to add and quiz yourself on Spanish words. I'm currently learning the language so thought it'd aid my studying!.",
+    status: true,
+    techs: ["Python", "pip", "CLI"],
+    link: "",
+    image: FaLanguage,
+    team: false,
+    docuemntation: "https://github.com/luiHoll97/aprendo/wiki",
+    code: "https://github.com/luiHoll97/aprendo",
+    pip: "https://pypi.org/project/aprendo/",
     linksAvailable: true,
   },
   {
